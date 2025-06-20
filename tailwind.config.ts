@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				blockchain: {
+					dark: '#0a0b1e',
+					darker: '#050612',
+					purple: '#6366f1',
+					blue: '#3b82f6',
+					cyan: '#06b6d4',
+					green: '#10b981',
+					accent: '#8b5cf6'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,24 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px rgba(99, 102, 241, 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 30px rgba(99, 102, 241, 0.6)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'blockchain-gradient': 'linear-gradient(135deg, #0a0b1e 0%, #1e1b4b 50%, #312e81 100%)'
 			}
 		}
 	},
